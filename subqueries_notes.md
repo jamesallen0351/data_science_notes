@@ -1,4 +1,4 @@
-#subqueries notes
+# subqueries notes
 making notes for class  Hello 
 command click to add cursor to multiple lines. Hello 
 
@@ -82,3 +82,8 @@ join employees using(emp_no);
 select (select max(salary) from salaries) as max, min(salary) as min
 from salaries
 where to_date > now();
+
+# exercise 6 notes
+
+First, I calculated the scalar value or cutoff salary for one standard deviation from the max salary. Then, I got a count of salaries within that one standard deviation. Then I wrote a query to get the scalar value for count of all current salaries. I then divided the number of salaries within one standard deviation by the number of total current salaries, and multiplied times 100.
+SELECT ((query that returns 83) / (query that returns 240_124)) * 100 AS percent_of_salaries;
