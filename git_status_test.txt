@@ -1,0 +1,38 @@
+adding a text file to test out github connection in statistics-exercises repository
+
+(base) jamesallen@Jamess-Air statistics-exercises % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hypothesis_testing.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) jamesallen@Jamess-Air statistics-exercises % git add .                 
+(base) jamesallen@Jamess-Air statistics-exercises % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   hypothesis_testing.ipynb
+
+(base) jamesallen@Jamess-Air statistics-exercises % git commit -m 'add review notes and additional answers'
+[main df6f46d] add review notes and additional answers
+ 1 file changed, 20 insertions(+), 2 deletions(-)
+(base) jamesallen@Jamess-Air statistics-exercises % git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 10.09 KiB | 3.36 MiB/s, done.
+Total 9 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+remote: fatal error in commit_refs
+To github.com:jamesallen0351/statistics-exercises.git
+ ! [remote rejected] main -> main (failure)
+error: failed to push some refs to 'github.com:jamesallen0351/statistics-exercises.git'
